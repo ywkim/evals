@@ -1,0 +1,9 @@
+math_frac_eq:
+  id: math_frac_eq.dev.v0
+  description: Evaluates the model's ability to perform mathematical operations involving fractions.
+  metrics: [accuracy]
+
+math_frac_eq.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: math_frac_eq/samples.jsonl
